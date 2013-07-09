@@ -25,6 +25,6 @@ def parse_ocr(text):
 
     account_num = []
     for char in characters.values():
-        account_num.append(NUMBERS[char])
+        account_num.append(NUMBERS.get(char, '?'))
 
     return ''.join(account_num)

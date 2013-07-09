@@ -15,3 +15,6 @@ class CheckAccountTest(TestCase):
         self.assertTrue(check_account('000000051'))
         self.assertTrue(check_account('490867715'))
 
+    def test_invalid_account_number(self):
+        self.assertFalse(check_account('345882865'))
+

@@ -14,6 +14,7 @@ NUMBERS = {
 }
 
 def parse_ocr(text):
+    """Parse an OCR representation of a number into a string."""
     characters = defaultdict(str)
     for line in text.split('\n'):
         i = 0
